@@ -1,0 +1,104 @@
+body {
+    margin:0;
+    background-image: url(IMG/смена-времен-года-за-1-минуту-sas.com.ru.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat:no-repeat ;
+    height: 100vh;
+    
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.449);
+    height: 100vh;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ujl;
+    src: url(fonts/ujl.ttf);
+}
+h1{
+    font-family: ujl;
+    animation: anim1 5s infinite;
+}
+main h1{
+    text-align: center;
+    font-size: 5vw;
+    color: rgb(233, 255, 133);
+    font-family: ujl;
+}
+h1{
+    font-family: ujl;
+    animation: anim1 5s infinite;
+}
+@keyframes anim1 {
+    from{color: rgb(205, 63, 63);}
+    20%{color: rgb(236, 194, 78);}
+    40%{color:rgb(138, 212, 1);}
+    60%{color:rgb(49, 118, 95);}
+    80%{color: rgb(14, 238, 201);} 
+    to{color: rgb(6, 103, 168);}
+}
+nav {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+nav a {
+    color:whitesmoke;
+    font-size: 3vw;
+    text-decoration: none;
+    transition: all 1s;
+    font-family: ujl;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    border-radius:40px ;
+    background-color: rgba(137, 212, 255, 0.728);
+    color:rgba(199, 90, 2, 0.91);
+    transform: scale(1.2);
+}
+
+#clock {
+    width: 170px;
+    height: 170px;
+    border: 10px groove greenyellow;
+    margin: auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#strelka1 {
+    position: absolute;
+    width: 45%;
+    height: 4px;
+    background-color: greenyellow;
+    top: calc(50% - 2px);
+    left: 50%;
+    animation: go 60s infinite linear;
+    transform-origin: left;
+}
+
+#strelka2 {
+    position: absolute;
+    width: 35%;
+    height: 4px;
+    background-color: greenyellow;
+    top: calc(50% - 2px);
+    left: 50%;
+    animation: go 3600s infinite linear;
+    transform-origin: left;
+}
+
+@keyframes go {
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg) ;}
+}

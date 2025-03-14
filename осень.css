@@ -1,0 +1,145 @@
+header {
+    height: 100vh;
+    background-image: url(IMG/1\ фон.gif);
+    background-size: cover;
+    background-attachment: fixed;
+}
+body{margin:0;}
+header div{
+    height: 100vh;
+    display: flex;
+    background-color: rgba(151, 82, 17, 0.322);
+    background:linear-gradient(rgba(226, 226, 203, 0.226),rgb(255, 192, 150)) ;
+}
+header h1{
+    margin: auto;
+    font-family: jctym;
+font-size: 10vw;
+font-style:initial;
+color:rgba(179, 71, 21, 0.774);
+}
+@font-face {
+    font-family: jctym;
+    src: url(fonts/jctym.ttf);
+}
+h1{
+    font-family: jctym;
+    animation: anim1 5s infinite;
+}
+@keyframes anim1 {
+    from{color: rgb(255, 67, 34);}
+    20%{color: rgba(255, 0, 0, 0.87);}
+    40%{color:rgb(212, 103, 1);}
+    60%{color:rgba(243, 77, 0, 0.61);}
+    80%{color: rgba(116, 136, 0, 0.904);} 
+}
+#poem{
+    font-family: jctym;
+    color:rgba(204, 24, 0, 0.774);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+    background-color:rgb(255, 192, 150) ;
+    align-items: center;
+}
+#poem p {
+font-size: 90px;
+line-height: 2;
+}
+#poem img{
+    border: 10px groove rgb(255, 106, 80);
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+}
+img{
+    width: 25vw;
+    height: 40vw;
+    object-fit: cover;
+    transition: all 1s;
+}
+table{
+    font-family: jctym;
+    font-size: 15ch;
+    background: linear-gradient(rgba(251, 96, 76, 0.524),rgb(255, 185, 167));
+    border: 50px groove rgb(169, 25, 0);
+    padding: 20px;
+    margin-left: 1%;
+    border-spacing: 30px;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+td{
+    font-family: jctym;
+    font-size: 3ch;
+    border: 20px solid rgb(92, 20, 2);
+    padding: 20px;
+    border-radius: 70%;
+    text-align: center;
+}
+td{
+    border: 15px groove rgb(169, 54, 0);
+    padding: 20 px;
+}
+#links{
+    padding: 50px;
+    background-size: cover;
+    background-image:url(IMG/1\ фон.gif) ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#links a{
+    font-size: 3vw;
+    font-family: jctym;
+    color: rgb(255, 170, 0);
+    width: 60%;
+    padding: 10px 0;
+    background-color: rgba(161, 175, 39, 0.373);
+    border: 3px groove rgb(255, 145, 0);
+    text-decoration: none;
+    transition: all 1s;
+}
+#links a:hover{
+    border-radius: 40px;
+    background-color: rgba(0, 128, 0, 0.650, 128, 0, 0.805);
+    color: #ffd53f;
+    transform: scale(1.2);
+}
+#pics img{
+    width: 19vw;
+    height: 19vw;
+    object-fit: cover;
+    transition: all 20s;
+}
+#pics {
+    display: flex;
+    justify-content: right;
+    background: linear-gradient(rgb(255, 192, 150),rgb(230, 255, 167));
+    gap: 2%;
+    margin-top: 50px;
+}
+#pics img:hover{
+    transform: scale(3);
+}
+#film{
+    text-align: center;
+    background: linear-gradient(rgb(255, 192, 150),rgb(230, 255, 167));
+    padding: 20px;
+}
+#film video{
+    width: 20vw;
+    height: 28vw;
+    object-fit: cover;
+    font-size: 2ch;
+    border: 40px solid rgb(92, 20, 2);
+    padding: 20px;
+    border-radius: 20%;
+    text-align: center;
+    border: 15px groove rgb(169, 54, 0);
+    padding: 20 px;
+}
